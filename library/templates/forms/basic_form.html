@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <h3>My Library - Add new book</h3>
+        </div>
+        <div class="row" style="margin-top:20px">
+            <div class="col-md-12">
+                <!--The HTML <form> element represents a document section that contains interactive controls to submit -->
+                <!--information to a web server-->
+                <form role="form" action="" method="POST">
+                    <div class="form-group">
+                        <label for="title">Title</label>
+                        <!--<input> element is used to create interactive controls for web-based forms -->
+                        <!--in order to accept data from the user-->
+                        <!--placeholder-->
+                        <!--A hint to the user of what can be entered in the control . -->
+                        <!--The placeholder text must not contain carriage returns or line-feeds-->
+                        <input class="form-control" name="title" placeholder="Book title">
+                    </div>
+                    <div class="form-group">
+                        <label for="isbn">ISBN</label>
+                        <input class="form-control" name="isbn" placeholder="ISBN">
+                    </div>
+                    <div class="form-group">
+                        <label for="author">Author</label>
+                        <!--<select> element represents a control that provides a menu of options-->
+                        <select class="form-control" name="author">
+                            <!--<option> element is used to define an item contained in a <select>-->
+                            <!--value-->
+                            <!--The content of this attribute represents the value to be submitted with the form, -->
+                            <!--should this option be selected-->
+                            <option value="1">Edgar Allan Poe</option>
+                            <option value="2">Mark Twain</option>
+                            <option value="3">Arthur Conan Doyle</option>
+                        </select>
+                    </div>
+                    <!--hidden: A control that is not displayed but whose value is submitted to the server-->
+                    <input type="hidden" name="SECRET_KEY" value="rmotr">
+                    <!--submit: The button submits the form data to the server-->
+                    <button type="submit" name='submit' class="btn btn-default" value="Form sent!">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
