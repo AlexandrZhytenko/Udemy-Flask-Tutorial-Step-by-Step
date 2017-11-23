@@ -11,7 +11,8 @@
 # from library._11_database_app_template_conditional import app
 # from library._12_database_app_with_join import app
 # from library._13_simple_form_submission import app
-from library._14_static_files import app
+# from library._14_static_files import app
+from library._15_template_inheritance import app
 
 if __name__ == '__main__':
     app.run(debug = True)
